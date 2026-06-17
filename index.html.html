@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARA LA PAPOI MAS CHIDA XDDDD🥀🥀🥀</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0b0f1a,#161b26);
+    min-height:100vh;
+    color:#ff00ff;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:white;
+}
+
+header p{
+    color:white;
+    margin-top:10px;
+}
+
+section{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.counter{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.box{
+    background:#ffe4e6;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.box h2{
+    color:#e11d48;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.photo{
+    height:250px;
+    border-radius:15px;
+    background:#ffd1dc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:3rem;
+}
+
+button{
+    border:none;
+    padding:15px 25px;
+    border-radius:12px;
+    background:#e11d48;
+    color:white;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#be123c;
+}
+
+.hidden-message{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:#fff1f2;
+    border-radius:15px;
+}
+
+.reasons ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>SONNNNNNN🥀🥀🥀</h1>
+    <p>Una pequeña página hecha con cariño</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Nuestra Historia</h2>
+
+        <p>
+            PAPOINA ERES UN CHANEQUENE QUE COME QUESADILLAS
+            DURAS JSAIJJKAJKAJSKJKAJK ANDO ABURRIDO XDDD
+            
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+
+        <h2>Tiempo Juntos ⏳</h2>
+
+        <div class="counter">
+            <div class="box">
+                <h2 id="days">0</h2>
+                <p>Días</p>
+            </div>
+
+            <div class="box">
+                <h2 id="hours">0</h2>
+                <p>Horas</p>
+            </div>
+
+            <div class="box">
+                <h2 id="minutes">0</h2>
+                <p>Minutos</p>
+            </div>
+
+            <div class="box">
+                <h2 id="seconds">0</h2>
+                <p>Segundos</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="card">
+
+        <h2>Galería 📸</h2>
+
+        <div class="gallery">
+
+            <div class="photo"><img src="papoi.jpg" width="300"/></div>
+            <div class="photo"><img src="gatito.jpg" width="300"/></div>
+            <div class="photo"><img src="perrito.jpg" width="300"/></div>
+            <div class="photo"><img src="gatito2.jpg" width="300"/></div>
+        
+	    </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="card reasons">
+
+        <h2>CHIKIYO🥀🥀🥀🥀</h2>
+
+        <ul>
+            <li>CHIKIYO</li>
+            <li>VAMOS A CHAMBEAR🥀🥀🥀</li>
+            <li>TE INVITO UN BOLILLO DURO CON FRIJOLITOS</li>
+            <li>TQMMM PAPOINA🥀🥀🥀</li>
+            <li>ESPERO PRONTO APRENDAS A ANDAR EN SKATE Y TE 
+			CAIGAS DE ESPALDAS Y YO ME RIA MUY FUELTE Y 
+			DESPUES YA TE AYUDE A LEVANTARTE JKSAKJASJSAKJKS</li>
+        </ul>
+
+    </div>
+</section>
+
+<section>
+    <div class="card">
+
+        <h2> PICALE 🎁</h2>
+
+        <button onclick="mostrarMensaje()">
+            Abrir Mensaje Secreto
+        </button>
+
+        <div class="hidden-message" id="mensaje">
+            <h3> PAPOI COMPRAME UNAS PAPAS </h3>
+
+            <p>
+                JAKKJAKJKAJAJK ME ACUERDO CUANDO TE CONOCI
+                Y ME PREGUNTASTES SOBRE COMO EMPEZAR EN EL 
+                SKATE Y ME DIJISTES QUE CALZABAS DE NUMERO
+				5 O 4 QUE NO TE ACORDABAS JJSKJASJKJ AHORA 
+				COMPRAME UNOS TAKIS PORFA ME MUERO DE HAMBRE 
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    XDDDD QUE NUB ERES PAPOI JAJSKDJAJKD
+</footer>
+
+<script>
+
+function mostrarMensaje(){
+    document.getElementById("mensaje").style.display="block";
+}
+
+// FECHA PERSONALIZABLE
+const startDate = new Date("2025-02-08");
+
+function actualizarContador(){
+
+    const now = new Date();
+    const diferencia = now - startDate;
+
+    const dias = Math.floor(diferencia / (1000*60*60*24));
+    const horas = Math.floor((diferencia/(1000*60*60)) % 24);
+    const minutos = Math.floor((diferencia/(1000*60)) % 60);
+    const segundos = Math.floor((diferencia/1000) % 60);
+
+    document.getElementById("days").textContent = dias;
+    document.getElementById("hours").textContent = horas;
+    document.getElementById("minutes").textContent = minutos;
+    document.getElementById("seconds").textContent = segundos;
+}
+
+setInterval(actualizarContador,1000);
+
+</script>
+
+</body>
+</html>
